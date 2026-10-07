@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHIQUO RNG | Fashion & Lifestyle</title>
+    <meta
+      name="description"
+      content="SHIQUO RNG is a modern online fashion and lifestyle store for babies, women, men, and all styles. Open daily from 8:30am to 7:30pm."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="status-row">
+          <span class="time">13:32</span>
+          <div class="status-icons" aria-label="status icons">
+            <span class="signal signal-1"></span>
+            <span class="signal signal-2"></span>
+            <span class="signal signal-3"></span>
+            <span class="wifi"></span>
+            <span class="battery"></span>
+          </div>
+        </div>
+      </header>
+
+      <div class="browser-header">
+        <button class="nav-btn back" aria-label="Go back">←</button>
+        <button class="nav-btn close" aria-label="Close">×</button>
+        <div class="browser-title">Web browser</div>
+        <button class="nav-btn more" aria-label="More actions">⋯</button>
+      </div>
+
+      <section class="brand-row">
+        <div class="brand-block">
+          <div class="brand-title">SHIQUO RNG</div>
+        </div>
+
+        <div class="utility-icons" aria-label="utility icons">
+          <button class="icon-btn" aria-label="Clock">◔</button>
+          <button class="icon-btn" aria-label="Profile">◌</button>
+          <button class="icon-btn" aria-label="Favorites">♡</button>
+          <button class="icon-btn" aria-label="Cart">🛒</button>
+          <button class="icon-btn menu" aria-label="Menu">☰</button>
+        </div>
+      </section>
+
+      <nav class="category-nav" aria-label="Product categories">
+        <button class="category-btn active" data-category="all">All Products</button>
+        <button class="category-btn" data-category="women">Women</button>
+        <button class="category-btn" data-category="men">Men</button>
+        <button class="category-btn" data-category="baby">Baby</button>
+        <button class="category-btn" data-category="sale">Sale</button>
+      </nav>
+
+      <label class="search-bar" aria-label="Search products">
+        <span class="search-icon">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search products" />
+      </label>
+
+      <div class="promo-strip">
+        <span class="phone-number">(+254) 74790900</span>
+        <span class="gift-emoji" aria-hidden="true">🎁</span>
+        <button class="shop-btn">SHOP NOW <span>›</span></button>
+      </div>
+
+      <main class="content-area">
+        <div class="headline-row">
+          <h1>ALL PRODUCTS</h1>
+          <div class="hours-pill">Open 8:30am–7:30pm</div>
+        </div>
+
+        <div class="subheading">All Products</div>
+
+        <div class="sort-row">
+          <div class="sort-label">SORT BY</div>
+          <div class="sort-control">
+            <span>Newest Arrivals</span>
+            <span class="chevron">⌄</span>
+          </div>
+
+          <div class="perpage">
+            <span>PER PAGE</span>
+            <div class="page-box">16</div>
+          </div>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </main>
+
+      <div class="bottom-nav">
+        <button class="bottom-pill active" aria-label="Grid view"></button>
+        <button class="bottom-pill" aria-label="Compact view"></button>
+        <button class="bottom-pill arrow" aria-label="Back to top">⌂</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
